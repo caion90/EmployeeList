@@ -4,6 +4,7 @@ pipeline {
     stage('Verify tooling') {
       steps {
         sh '''
+          sudo docker-compose down
           sudo docker version
           sudo docker info
           sudo docker-compose version
@@ -14,7 +15,7 @@ pipeline {
     }
       stage('Prune all docker data') {
         steps {
-          sh 'sudo docker system prune -a --volumes -f'
+         // sh 'sudo docker system prune -a --volumes -f'
       }
      }
       stage('Build container') {
