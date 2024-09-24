@@ -13,7 +13,6 @@ pipeline {
           '''
       }
     }
-     }
       stage('Build container') {
         steps {
          sh '''
@@ -22,4 +21,5 @@ pipeline {
          '''
       }
       }
-    }
+  }
+}
