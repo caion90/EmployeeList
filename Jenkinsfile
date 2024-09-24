@@ -29,9 +29,9 @@ pipeline {
   }
   post {
     success {
-      sh '''
-      sudo docker-compose up -d --no-color
-      '''
+      //sh '''
+      //sudo docker-compose up -d --no-color
+      //'''
     }
   }
 }
