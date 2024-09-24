@@ -20,7 +20,9 @@ import com.empregados.app.service.EmpregadosService;
 
 @RestController
 @RequestMapping("/api/v1/")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+//@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin
+	
 public class EmpregadosController {
 
 	@Autowired
