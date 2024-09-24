@@ -13,10 +13,8 @@ pipeline {
           '''
       }
     }
-      stage('Prune all docker data') {
-        steps {
-         // sh 'sudo docker system prune -a --volumes -f'
-      }
+      stage('Prune all docker data') 
+  
      }
       stage('Build container') {
         steps {
@@ -25,13 +23,6 @@ pipeline {
          sudo docker-compose up -d --no-color
          '''
       }
-    }
-  }
-  post {
-    success {
-      //sh '''
-      //sudo docker-compose up -d --no-color
-      //'''
     }
   }
 }
