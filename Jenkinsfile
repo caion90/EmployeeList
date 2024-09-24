@@ -26,10 +26,6 @@ pipeline {
          '''
       }
     }
-     stage('Test container') {
-        steps {
-      }
-    }
   }
   post {
     success {
