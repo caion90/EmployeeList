@@ -20,34 +20,39 @@ import com.empregados.app.service.EmpregadosService;
 
 @RestController
 @RequestMapping("/api/v1/")
-@CrossOrigin(origins = "http://44.203.53.43:8000/api/v1/empregados")
+
 	
 public class EmpregadosController {
 
 	@Autowired
 	EmpregadosService empregadosService;
-	
+
+	@CrossOrigin
 	@PostMapping("/empregados")
 	private EmpregadoEntity salvarEmpregado(@RequestBody EmpregadoEntity empregado) {
 		empregadosService.salvar(empregado);
 		return empregado;
 	}
-		
+
+	@CrossOrigin
 	@GetMapping("/empregados")
 	private List<EmpregadoEntity> listarEmpregados() {
 		return empregadosService.listar();
 	}
 
+	@CrossOrigin
 	@GetMapping("/empregados/{id}")
 	private EmpregadoEntity GetEmpregadoByID(@PathVariable("id") Long id) {
 		return empregadosService.GetEmployeeByID(id);
 	}
 	
+	@CrossOrigin
 	@PutMapping("/empregados/{id}")
 	private EmpregadoEntity UpdateEmpregadoByID(@PathVariable("id") Long id, @RequestBody EmpregadoEntity empregado) {
 		return empregadosService.UpdateEmpregadoByID(id, empregado);
 	}
 
+	@CrossOrigin
 	@DeleteMapping("/empregados/{id}")
 	private void DeleteEmpregadoByID(@PathVariable("id") Long id) {
 		empregadosService.DeleteEmpregadoByID(id);
