@@ -20,8 +20,7 @@ import com.empregados.app.service.EmpregadosService;
 
 @RestController
 @RequestMapping("/api/v1/")
-//@CrossOrigin(origins = "*", allowedHeaders = "*")
-@CrossOrigin
+@CrossOrigin(origins = "http://44.203.53.43:8000/api/v1/empregados")
 	
 public class EmpregadosController {
 
