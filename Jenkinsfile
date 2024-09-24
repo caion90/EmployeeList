@@ -12,6 +12,8 @@ pipeline {
           jq --version
           '''
       }
+    }
+     }
       stage('Build container') {
         steps {
          sh '''
@@ -19,7 +21,5 @@ pipeline {
          sudo docker-compose up -d --no-color
          '''
       }
+      }
     }
-  }
-}
-}
