@@ -28,7 +28,7 @@ pipeline {
     }
      stage('Test container') {
         steps {
-         sh '''
+        # sh '''
          curl http://168.227.56.72:8000/api/v1/empregados | jq
          curl http://168.227.56.72:80/
          sudo docker-compose down
