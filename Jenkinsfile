@@ -12,10 +12,6 @@ pipeline {
           jq --version
           '''
       }
-    }
-      stage('Prune all docker data') 
-  
-     }
       stage('Build container') {
         steps {
          sh '''
