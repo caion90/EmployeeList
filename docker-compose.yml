@@ -1,8 +1,8 @@
 # Docker Compose file Reference (https://docs.docker.com/compose/compose-file/)
 
 version: '3.7'
-
 # Define services
+# teste1
 services:
   # App backend service
   app-server:

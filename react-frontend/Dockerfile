@@ -7,6 +7,8 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install
 
+#teste
+
 COPY . ./
 
 ENV REACT_APP_API_BASE_URL=44.203.53.43
