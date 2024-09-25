@@ -1,6 +1,8 @@
 #### Stage 1: Build the application
 FROM openjdk:11-jdk-slim as build
 
+
+##test
 # Set the current working directory inside the image
 WORKDIR /app
 
