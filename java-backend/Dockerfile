@@ -2,7 +2,7 @@
 FROM openjdk:11-jdk-slim as build
 
 
-##test
+##tes
 # Set the current working directory inside the image
 WORKDIR /app
 
