@@ -11,7 +11,7 @@ import com.empregados.app.repository.EmpregadosRepository;
 @Service
 public class EmpregadosService {
 
-	@Autowired
+	@Autowired //teste
 	EmpregadosRepository empregadosRepository;
 
 	
