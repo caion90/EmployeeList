@@ -20,6 +20,7 @@ import com.empregados.app.service.EmpregadosService;
 
 @RestController
 @RequestMapping("/api/v1/")
+@CrossOrigin
 
 	
 public class EmpregadosController {
