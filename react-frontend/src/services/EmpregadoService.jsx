@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const api_url = "http://44.203.53.43:8000/api/v1/empregados";
+const api_url = "http://localhost:8000/api/v1/empregados";
 
 
 class EmpregadoService {
